@@ -12,7 +12,9 @@ public class Produto {
         this.preco = preco;
         this.categoria = categoria;
     }
+    public Produto(){
 
+    }
     public String getNome() {
         return nome;
     }
@@ -43,5 +45,15 @@ public class Produto {
 
     public void setPreco(double preco) {
         this.preco = preco;
+    }
+
+    @Override
+    public String toString() {
+        return "Produto{" +
+                "nome='" + nome + '\'' +
+                ", estoque=" + estoque +
+                ", preco=" + preco +
+                ", categoria=" + categoria +
+                '}';
     }
 }
